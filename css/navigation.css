@@ -1,0 +1,39 @@
+.site-header {
+    display: flex;
+    color: blanchedalmond;
+    background: rgb(23,14,9);
+    background: linear-gradient(90deg, rgba(23,14,9,1) 0%, rgba(88,52,29,1) 64%, rgba(23,14,9,1) 100%);
+}
+
+.site-header-heading{
+    font-size: 80px;
+}
+
+
+.site-header-nav {
+    display: flex;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+.site-header-nav-ul {
+    display: flex;
+}
+
+.nav-li {
+    display: flex;
+    padding: 0 1em;
+}
+
+li.nav-li a {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: #BCA491;
+    text-transform: uppercase;
+}
+
+li.nav-li a:hover {
+    color: #ECB200;
+}
+
