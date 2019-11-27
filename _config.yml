@@ -1,6 +1,7 @@
 title: Sharo
 email: your-email@example.com
 description: Hello Marto
+destination: docs
 baseurl: ""
 url: ""
 twitter_username: jekyllrb
@@ -11,14 +12,17 @@ plugins:
   - jekyll-feed
 
 
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - docs
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - package.json
+  - package-lock.json
+  - gulpfile.js
+  - theme-personal
