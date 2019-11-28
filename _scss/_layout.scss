@@ -72,12 +72,27 @@ div.top-section-picture img {
 /* Section-2 */
 
 .adoption {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     justify-content: flex-end;
+
+    & h2, h4, .adoption-adopt{
+        color: #4B5864;
+    }
+    & h2 {
+        font-size: 3em;
+        font-weight: 100;
+    }
+
+    & .adoption-heading, .adoption-adopt{
+        margin-top: 2em;
+    }
+    & .adoption-section {
+        margin-top: 4em;
+    }
 }
 
 .adoption-heading, .adoption-adopt{
@@ -85,23 +100,62 @@ div.top-section-picture img {
 }
 
 .adoption-section {
-    /* flex-grow: 1; */
-    width: 25%;
-    border: 1px solid black;
+    width: 23%;
+    margin: auto;
 }
 
 .adoption-section-wraper {
-    padding: 0 3%;
-    flex-direction: column;
-    height: 100%;
+
+    
+    & span {
+        display: block;
+        width: 2em;
+        height: 2em;
+        background-color: #ECB200;
+        margin: auto;
+        color: blanchedalmond;
+        font-weight: 900;
+        padding-top: 0.2em;
+        z-index: 2;
+    }
+    
+    & span:before {
+        content: '';
+        width: 15em;
+        height: 2px;
+        transform: translate(-48%);
+        border: 1px solid #4B5864;
+        opacity: 0.3;
+        margin-top: 0.8em;
+        position: absolute;
+        z-index: 1;
+    }
 }
 
 .adoption-block-icon {
+    width: 8em;
+    height: 8em;
     display: flex;
     flex-direction: column;
+    position: relative;
+    margin: auto;
+
+    & a {
+        display: block;
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+    }
+    & img {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: auto;
+    }
 }
 
 .adoption-block-heading {
+    margin-top: 1em;
 }
 
 .adoption-adopt {
@@ -113,3 +167,36 @@ div.top-section-picture img {
     font-weight: 700;
 }
 
+section.galery {
+
+    margin-top: 3em;
+    width: 100;
+    background-color: #E9B72F;
+    height: 700px;
+
+    & .galery-heading {
+        display: block;
+        // width: 600px;
+        text-align: center;
+        margin: auto;
+        font-size: 3em;
+        font-weight: 100;
+        color: #4B5864;
+        padding-top: 0.7em;
+    }
+    & .galery-images {
+        display: block;
+    }
+
+    & .galery-button {
+        display: block;
+        margin: auto;
+        width: 12em;
+        height: 3em;
+        color: #4B5864;
+        font-size: 1.3em;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 0.5em, 0, 0.5, 0;
+    }
+}
