@@ -168,15 +168,15 @@ div.top-section-picture img {
 }
 
 section.galery {
-
+    display: flex;
+    flex-direction: column;
     margin-top: 3em;
     width: 100;
     background-color: #E9B72F;
-    height: 700px;
+    height: 60vh;
 
     & .galery-heading {
-        display: block;
-        // width: 600px;
+        //display: block;
         text-align: center;
         margin: auto;
         font-size: 3em;
@@ -185,11 +185,9 @@ section.galery {
         padding-top: 0.7em;
     }
     & .galery-images {
-        display: block;
+        display: flex;
     }
-
     & .galery-button {
-        display: block;
         margin: auto;
         width: 12em;
         height: 3em;
@@ -198,5 +196,143 @@ section.galery {
         text-transform: uppercase;
         font-weight: 600;
         padding: 0.5em, 0, 0.5, 0;
+        margin-bottom: 1em;
     }
 }
+.galery-images-container {
+    margin-left: 0.1em;
+    width: 15em;
+    height: 30em;
+    position: relative;
+    & a {
+        display: block;
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        overflow: hidden;
+    }
+    & img {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: auto;
+    }
+}
+.hero {
+    max-width: 1200px;
+    margin: 3em auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: flex-end;
+    background-color: #E9B72F;
+
+    & .hero-heading {
+        color: #4B5864;
+        padding-top: 0.5em;
+        font-size: 4em;
+    }
+
+    & .hero-content {
+        display: flex;
+        flex-wrap: wrap;
+
+        & .hero-left-section, .hero-right-section  {
+            width: 50%;
+            height: auto;
+        }
+
+        & .hero-left-section {
+            font-size: 2em;
+            color: #4B5864;
+            padding: 2em;
+        }
+    }
+
+    & .hero-button {
+        margin: auto;
+        width: 96%;
+        height: 3em;
+        color: #4B5864;
+        font-size: 1.3em;
+        font-weight: 600;
+        margin-bottom: 1em;
+    }
+}
+.hero-right-section {
+    position: relative;
+    & a {
+        display: block;
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        overflow: hidden;
+    }
+    & img {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: auto;
+    }
+}
+
+.sharo {
+    background-color: #473021;
+    & .sharo-text{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        color: #DCD0C3;
+        text-align: center;
+        padding-top: 5em;
+        padding-bottom: 7em;
+    }
+
+    & .sharo-text-heading {
+        font-size: 3em;
+    }
+    & .sharo-paragraph {
+        padding-bottom: 4em;
+    }
+    & .sharo-button {
+        font-size: 1.2em;
+        margin: auto;
+        padding: 0.5em 0.8em;
+        background-color: #ECB200;
+        color: aliceblue;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+
+}
+.sharo-wrapper {
+    max-width: 1200px;
+    margin: 3em auto;
+    display: flex;
+
+}
+.sharo-logo {
+    width: 50%;
+    position: relative;
+    & a {
+        display: block;
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        overflow: hidden;
+    }
+    & img {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        height: 80%;
+        width: auto;
+    }
+}
+
+.volunteer {
+    background-image: url(/Pictures/accomplishment-community-service-diversity-1643326-1200x800.jpg); 
+}
+
+
+
