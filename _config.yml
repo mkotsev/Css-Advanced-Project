@@ -2,7 +2,7 @@ title: Sharo
 email: your-email@example.com
 description: Hello Marto
 destination: docs
-baseurl: ""
+baseurl: "/Project"
 url: ""
 twitter_username: jekyllrb
 github_username:  jekyll
