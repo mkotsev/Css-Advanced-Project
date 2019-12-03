@@ -331,7 +331,7 @@ section.galery {
 }
 
 .volunteer {
-    background-image: url(/Css-Advanced-Project/Pictures/accomplishment.jpg);
+    background-image: url(/Css-Advanced-Project/Pictures/accomplishment.jpg), url(/Pictures/accomplishment.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -374,27 +374,60 @@ section.galery {
 
 }
 
-.site-footer a{
-    text-decoration: none;   
+.site-footer {
+    color: #DCD0C3;
+    background-color: #473021;
+    & a {
+        text-decoration: none;  
+        color: #ECB200; 
+    }
+    & a:hover{
+        color: rgb(39, 188, 238);
+    }
+    & h4 {
+        padding-bottom: 0.5em;
+    }
+    & .site-footer-wapper {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 2em;
+    }
+    & .site-footer-about {
+        max-width: 40%;
+        padding: 2em;
+    }
+    & .site-footer-links, .site-footer-contacts {
+        max-width: 30%;
+        padding: 2em;
+    }
 }
 
-.site-footer-wapper {
-    background-color: lightgreen;
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 2em;
+.site-footer-contacts {
+    & li {
+        list-style-type: none;
+    }
+    & li:nth-child(1){
+        padding-top: 2em;
+        text-transform: uppercase;
+    }
+    & li:nth-child(2), li:nth-child(3){
+        padding-top: 1em;
+    }
+
+    & li:nth-child(2) > a::before {  
+        padding-right: 1em;  
+        content: '\f09a';
+    }
+
+    & li:nth-child(3) > a::before {  
+        padding-right: 1em;  
+        content: '\f09a';
+    }
+
 }
 
-.site-footer-about {
-    max-width: 50%;
-    padding: 2em;
-}
-.site-footer-links, .site-footer-contacts {
-    max-width: 25%;
-    padding: 2em;
-}
 
 .site-footer-bottom {
     max-width: 100%;
