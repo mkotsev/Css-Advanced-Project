@@ -4,8 +4,8 @@ description: Hello Marto
 destination: docs
 baseurl: "/Project"
 url: ""
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: Mkotsev
+github_username:  mkotsev
 
 
 plugins:
