@@ -292,6 +292,16 @@ section.galery {
     & .sharo-text-heading {
         font-size: 3em;
     }
+    & .sharo-text-heading::before {
+        font-family: 'Font Awesome 5 Free';
+        content: '\f0da';
+        color: #ECB200;
+    }
+    & .sharo-text-heading::after {
+        font-family: 'Font Awesome 5 Free';
+        content: '\f0d9';
+        color: #ECB200;
+    }
     & .sharo-paragraph {
         padding-bottom: 4em;
     }
@@ -375,8 +385,8 @@ section.galery {
 }
 
 .site-footer {
-    color: #DCD0C3;
-    background-color: #473021;
+    color: rgb(117, 114, 110);
+    background-color: #1F130C;
     & a {
         text-decoration: none;  
         color: #ECB200; 
@@ -386,6 +396,7 @@ section.galery {
     }
     & h4 {
         padding-bottom: 0.5em;
+        color: aliceblue;
     }
     & .site-footer-wapper {
         max-width: 1200px;
@@ -415,25 +426,61 @@ section.galery {
     & li:nth-child(2), li:nth-child(3){
         padding-top: 1em;
     }
-
     & li:nth-child(2) > a::before {  
-        padding-right: 1em;  
-        content: '\f09a';
+        padding-right: 1em; 
+        font-family: 'Font Awesome 5 Free';
+        content: '\f095';
+        font-weight: 900;
     }
-
     & li:nth-child(3) > a::before {  
         padding-right: 1em;  
-        content: '\f09a';
+        font-family: 'Font Awesome 5 Free';
+        content: '\f0e0';
+        //font-weight: 900;
     }
+}
 
+.site-footer-links {
+    & a::before {
+        padding-right: 1em; 
+        font-family: 'Font Awesome 5 Free';
+        content: '\f0c1';
+        font-weight: 900;
+    }
+    & select {
+        width: 12em;
+        margin-top: 1.6em;
+        font-size: 16px;
+        padding: 0.3em;
+        color: #ECB200;
+    }
 }
 
 
 .site-footer-bottom {
+    width: 1200px;
+    display: flex;
     max-width: 100%;
-    border-top: black 2px solid;
-    padding-left: 2em;
+    padding: 1.5em 0 1.5em 2em;
+
+    & .back-to-top {
+        margin-left: auto;
+        padding-right: 2em;
+    }
+    & .back-to-top::before {
+        font-family: 'Font Awesome 5 Free';
+        font-size: 25px;
+        content: '\f077';
+        font-weight: 900;
+    }
+    & .site-footer-rights::before {
+        font-family: 'Font Awesome 5 Free';
+        content: '\f1f9';
+        //font-weight: 900;
+    }
 }
-
-
-
+.end {
+    display: flex;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    margin-top: -5.4em;
+}
