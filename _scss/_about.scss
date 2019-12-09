@@ -1,0 +1,38 @@
+:root {
+
+}
+
+.main-about section {
+    width: 85vw;
+    margin: auto;
+}
+.about-section-one {
+    font-size: 2.5em;
+    line-height: 1.1em;
+    padding-top: 2em;
+    color: #4B5864;
+}
+.about-section-two, .about-section-four {
+    background-image: linear-gradient(to right, #7e5539, #5c422a, #3d2f1e, #221c13, #050402);;
+}
+.about-section-three{
+    background-color: none;
+}
+
+.about-section-two, .about-section-three, .about-section-four {
+    display: flex;
+    & .image-side, .text-side {
+        width: 50%;
+        height: auto;
+    }
+    & .text-side {
+        display: block;
+
+        & .bulets {
+            background-color: #C18B0E;
+            opacity: 0.8;
+            padding: 1em 1em 1em 2em;
+            margin-bottom: 1em;
+        }
+    }
+}
