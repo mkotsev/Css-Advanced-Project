@@ -24,8 +24,9 @@
         padding: 2em;
     }
     & .site-footer-links, .site-footer-contacts {
-        max-width: 30%;
+        max-width: 25%;
         padding: 2em;
+        margin-left: 3em;
     }
 }
 
@@ -50,7 +51,6 @@
         padding-right: 1em;  
         font-family: 'Font Awesome 5 Free';
         content: '\f0e0';
-        //font-weight: 900;
     }
 }
 

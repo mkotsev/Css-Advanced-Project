@@ -3,13 +3,21 @@ body {
     //margin: 0 auto;
 }
 
-button {
+button, .sharo-button {
     border: none;
     outline: none;
     box-shadow: 3px 3px 10px black;
     cursor: pointer;
     border-radius: 0.4em;
     text-transform: uppercase;
+    text-decoration: none;
+}
+   
+.anchor{
+    display: block;
+    height: 30vh; /* 50% viewport height */
+    margin-top: -30vh;
+    visibility: hidden;
 }
 
 /* Top-Section */
