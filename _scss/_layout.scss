@@ -3,7 +3,7 @@ body {
     //margin: 0 auto;
 }
 
-button, .sharo-button {
+button, .sharo-button, .galery-button {
     border: none;
     outline: none;
     box-shadow: 3px 3px 10px black;
@@ -195,6 +195,7 @@ section.galery {
             font-weight: 600;
             padding: 0.5em 0.8em;
             margin: 1em auto;
+            background-color: #DDDDDD;
         }
     }
 }
