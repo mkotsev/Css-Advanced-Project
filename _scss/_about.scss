@@ -1,6 +1,3 @@
-:root {
-
-}
 
 .main-about section {
     width: 85vw;
@@ -11,7 +8,7 @@
 .about-section-one {
     font-size: 2.5em;
     line-height: 1.1em;
-    padding-top: 2em;
+    padding: 2em 0 1em 0;
     color: #4B5864;
 }
 
@@ -80,19 +77,12 @@ h2 {
      }
  }
  .about-section-six {
-    & image {
-        position: relative;
-        & a {
-            display: block;
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            overflow: hidden;
-        }
+    & .image {
+        display: block;
+        margin: auto;
+        margin-top: 2em;
         & img {
-            position: absolute;
-            top: 50%; left: 50%;
-            transform: translate(-50%, -50%);
-            height: auto;
+            max-height: auto;
             width: 100%;
         }
     }

@@ -15,39 +15,41 @@ button, .sharo-button, .galery-button {
    
 .anchor{
     display: block;
-    height: 30vh; /* 50% viewport height */
+    height: 30vh; 
     margin-top: -30vh;
     visibility: hidden;
 }
 
-/* Top-Section */
+.adoption-adopt:hover,
+.galery-button:hover,
+.hero-button:hover,
+.volunteer-box-button:hover {
+    box-shadow: 10px 10px 30px black;
+}
+
+
 .top-section {
     display: flex;
     height: 60vh;
     background: rgb(23,14,9);
     background: linear-gradient(90deg, rgba(23,14,9,1) 0%, rgba(88,52,29,1) 64%, rgba(23,14,9,1) 100%);
+    & div {
+        width: 85vw;
+        margin: 0 auto;
+    }
 }
 
-.top-section div {
-    width: 85vw;
-    margin: 0 auto;
-}
 .top-section-container {
     display: flex;
     & .top-section-picture {
-        position: relative;
-        & a {
-            display: block;
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            overflow: hidden;
-        }
+        display: flex;
+        align-items: flex-end;
         & img {
-            position: absolute;
-            top: 50%; left: 50%;
-            transform: translate(-50%, -50%);
+            display: block;
+            //width: 100%;
             height: 100%;
-            width: auto;
+            max-width: auto;
+            margin: auto;
         }
     }
     & .top-section-heading {
@@ -75,9 +77,6 @@ button, .sharo-button, .galery-button {
         }
     } 
 }
-
-
-/* Section-2 */
 
 .adoption {
 
@@ -278,67 +277,54 @@ section.galery {
     margin-top: 3em;
     display: flex;
     background-color: #473021;
+    & div{
+        width: 85vw;
+        margin: 0 auto;
+    }
+    & .sharo-wrapper {
+        display: flex;
+        align-items: flex-end;
+        & img {
+            display: block;
+            width: 100%;
+            max-height: auto;
+        }
+    }
     & .sharo-text{
         display: flex;
         flex-direction: column;
+        padding-bottom: 5em;
         margin: auto;
         color: #DCD0C3;
         text-align: center;
-        padding-top: 5em;
-        padding-bottom: 7em;
-    }
-
-    & .sharo-text-heading {
-        font-size: 3em;
-    }
-    & .sharo-text-heading::before {
-        font-family: 'Font Awesome 5 Free';
-        content: '\f0da';
-        color: #ECB200;
-    }
-    & .sharo-text-heading::after {
-        font-family: 'Font Awesome 5 Free';
-        content: '\f0d9';
-        color: #ECB200;
-    }
-    & .sharo-paragraph {
-        padding-bottom: 4em;
-    }
-    & .sharo-button {
-        font-size: 1.2em;
-        margin: auto;
-        padding: 0.5em 0.8em;
-        background-color: #ECB200;
-        color: aliceblue;
-        font-weight: 100;
-        transition: color 0.8s linear;
-    }
-    & .sharo-button:hover{
-        color: black;
-    }
-
-}
-.sharo div{
-    width: 85vw;
-    margin: 0 auto;
-}
-.sharo-wrapper {
-    display: flex;
-    & .sharo-logo {
-        position: relative;
-        & a {
-            display: block;
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            overflow: hidden;
+        & .sharo-text-heading {
+            font-size: 3em;
+            padding-bottom: 0.5em;
         }
-        & img {
-            //padding: 2em 2em 0 2em;
-            position: absolute;
-            top: 50%; left: 50%;
-            transform: translate(-50%, -38%);
-            height: auto;
-            width: 100%;
+        & .sharo-text-heading::before {
+            font-family: 'Font Awesome 5 Free';
+            content: '\f0da';
+            color: #ECB200;
+        }
+        & .sharo-text-heading::after {
+            font-family: 'Font Awesome 5 Free';
+            content: '\f0d9';
+            color: #ECB200;
+        }
+        & .sharo-paragraph {
+            padding-bottom: 3em;
+        }
+        & .sharo-button {
+            font-size: 1.2em;
+            margin: auto;
+            padding: 0.5em 0.8em;
+            background-color: #ECB200;
+            color: aliceblue;
+            font-weight: 100;
+            transition: color 0.8s linear;
+        }
+        & .sharo-button:hover{
+            color: black;
         }
     }
 }
@@ -383,10 +369,6 @@ section.galery {
         font-weight: 100;
         transition: color 0.8s linear;
     }
-    & .volunteer-box-button:hover {
-        box-shadow: 10px 10px 30px black;
-    }
-
 }
 
 
