@@ -1,0 +1,19 @@
+.main-galery {
+    max-width: 80vw;
+    margin: 1em auto;
+}
+
+.galery-grid-ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    //grid-template-rows: repeat(6, 1fr);
+    background-color: cadetblue;
+    
+    & li {
+        display: block;
+        list-style: none outside;
+    }
+    & img {
+        display: block;
+    }
+}
