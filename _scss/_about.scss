@@ -5,6 +5,8 @@
 .main-about section {
     width: 85vw;
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 .about-section-one {
     font-size: 2.5em;
@@ -12,27 +14,86 @@
     padding-top: 2em;
     color: #4B5864;
 }
-.about-section-two, .about-section-four {
-    background-image: linear-gradient(to right, #7e5539, #5c422a, #3d2f1e, #221c13, #050402);;
+
+h2 {
+     font-size: 2.5em;
+     margin-left: 0.8em;
+     padding: 1em 0 1em 0; 
+}
+
+.text-side {
+    width: 500px;
+    & .bulets {
+        background-color: #C18B0E;
+        opacity: 0.8;
+        padding: 1em 1em 1em 2em;
+        margin: 0 0 2em 2em;
+        line-height: 2em;
+    }
+    & li {
+        list-style-type: square;
+    }
 }
 .about-section-three{
-    background-color: none;
-}
-
-.about-section-two, .about-section-three, .about-section-four {
-    display: flex;
-    & .image-side, .text-side {
-        width: 50%;
-        height: auto;
+    background-image: url(/Pictures/about2.png);
+    background-repeat: no-repeat;
+    background-position: 0% 20%;
+    & h2 {
+        margin: 0 1em 0 auto;
     }
     & .text-side {
-        display: block;
+        margin: 0 2em 0 auto;
+    }
 
-        & .bulets {
-            background-color: #C18B0E;
-            opacity: 0.8;
-            padding: 1em 1em 1em 2em;
-            margin-bottom: 1em;
-        }
+}
+.about-section-two {
+    background-image: url(/Pictures/about1-1.jpg);
+}
+.about-section-four {
+    background-image: url(/Pictures/about3.jpg);
+    & span {
+        color: black;
     }
 }
+.about-section-two, .about-section-four {
+    background-repeat: no-repeat;
+    background-position: 100% 30%;
+    color: white;
+}
+ .about-section-five {
+     & a {
+         background-color: #C18B0E;
+         margin-top: 2em;
+         text-align: center;
+         text-decoration: none;
+         text-transform: uppercase;
+         font-size: 1.5em;
+         padding: 0.3em;
+         color: #4B5864;
+         font-weight: 600;
+     }
+     & p {
+         color: #C18B0E;
+         padding-top: 1.5em;
+         font-size: 1.5em;
+         line-height: 1.3em;
+     }
+ }
+ .about-section-six {
+    & image {
+        position: relative;
+        & a {
+            display: block;
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            overflow: hidden;
+        }
+        & img {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            height: auto;
+            width: 100%;
+        }
+    }
+ }
