@@ -11,6 +11,9 @@
     & h4 {
         padding-bottom: 0.5em;
         color: aliceblue;
+        @include bp(phone){
+            padding-bottom: 0;
+        }
     }
     & .site-footer-wrapper {
         max-width: 1200px;
@@ -18,15 +21,48 @@
         display: flex;
         flex-wrap: wrap;
         padding-top: 2em;
+        @include bp(phone){
+            display: block;
+        }
     }
+
     & .site-footer-about {
         max-width: 40%;
         padding: 2em;
+        @include bp(mobile){
+            max-width: 100%;
+        }
+        @include bp(phone){
+            max-width: 100%;
+        }
     }
     & .site-footer-links, .site-footer-contacts {
         max-width: 25%;
         padding: 2em;
         margin-left: 3em;
+        @include bp(mobile){
+            display: block;
+            min-width: 34%;
+            padding: 0;
+            margin-left: 2em;
+            padding-bottom: 1em;
+        }
+        @include bp(phone){
+            max-width: 100%;
+            padding: 0;
+            margin-left: 2em;
+        }
+    }
+    & .site-footer-links {
+        @include bp(phone){
+            display: flex;
+            flex-direction: column;
+        }
+        & a{
+            @include bp(phone){
+                padding-top: 1em;
+            }
+        }
     }
 }
 
@@ -37,6 +73,9 @@
     & li:nth-child(1){
         padding-top: 2em;
         text-transform: uppercase;
+        @include bp(phone){
+            padding-top: 1em;
+        }
     }
     & li:nth-child(2), li:nth-child(3){
         padding-top: 1em;
@@ -67,6 +106,14 @@
         font-size: 16px;
         padding: 0.3em;
         color: #ECB200;
+    }
+    & a::before, select{
+        @include bp(phone){
+            margin-bottom: 1em;
+        }
+    }
+    @include bp(phone){
+        margin-top: 2.5em;
     }
 }
 

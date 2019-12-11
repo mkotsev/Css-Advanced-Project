@@ -254,22 +254,22 @@ section.galery {
         font-weight: 600;
         margin-bottom: 1em;
     }
-}
-.hero-right-section {
-    position: relative;
-    & a {
-        display: block;
-        position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
-        overflow: hidden;
-    }
-    & img {
-        padding: 2.5em;
-        position: absolute;
-        top: 50%; left: 50%;
-        transform: translate(-50%, -50%);
-        height: auto;
-        width: 100%;
+    & .hero-right-section {
+        position: relative;
+        & a {
+            display: block;
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            overflow: hidden;
+        }
+        & img {
+            padding: 2.5em;
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            height: auto;
+            width: 100%;
+        }
     }
 }
 
@@ -288,6 +288,14 @@ section.galery {
             display: block;
             width: 100%;
             max-height: auto;
+            @include bp(phone){
+                width: 60%;
+                //height: auto;
+                margin: auto;
+            }
+        }
+        @include bp(phone){
+            flex-direction: column-reverse;
         }
     }
     & .sharo-text{
@@ -297,9 +305,26 @@ section.galery {
         margin: auto;
         color: #DCD0C3;
         text-align: center;
+        @include bp(mobile){
+            padding-bottom: 3em;
+        }
+        @include bp(tablet){
+            padding-bottom: 1em;
+        }
+        @include bp(phone){
+            padding: 1em 0 0.1em 0;
+        }
+
         & .sharo-text-heading {
             font-size: 3em;
-            padding-bottom: 0.5em;
+            @include bp(mobile){
+                font-size: 2.3em;
+                padding: 0.5em 0;
+            }
+            @include bp(tablet){
+                font-size: 1.7em;
+                padding: 0.3em 0;
+            }
         }
         & .sharo-text-heading::before {
             font-family: 'Font Awesome 5 Free';
@@ -313,6 +338,9 @@ section.galery {
         }
         & .sharo-paragraph {
             padding-bottom: 3em;
+            @include bp(tablet){
+                padding-bottom: 1.5em;
+            }
         }
         & .sharo-button {
             font-size: 1.2em;
@@ -345,11 +373,18 @@ section.galery {
         padding: 2em 1em 2em 6em;
         display: flex;
         flex-direction: column;
+        @include bp(phone){
+            padding: 2em 1em 2em 2em;
+        }
     }
 
     & .volunteer-box-heading{
         font-size: 2.7em;
         font-weight: 100;
+        @include bp(phone){
+            font-size: 2.5em;
+            font-weight: 100;
+        }
     }
 
     & .volunteer-box-paragraph{
