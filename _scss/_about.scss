@@ -10,29 +10,53 @@
     line-height: 1.1em;
     padding: 2em 0 1em 0;
     color: #4B5864;
+    @include bp(tablet){
+        font-size: 2.3em;
+    }
+    @include bp(small-tablet){
+        font-size: 2.1em;
+    }
+    @include bp(phone){
+        font-size: 1.8em;
+    }
 }
 
 h2 {
      font-size: 2.5em;
      margin-left: 0.8em;
      padding: 1em 0 1em 0; 
+     @include bp(about){
+        margin: 0;
+    }
 }
 
 .text-side {
-    width: 500px;
+    max-width: 500px;
+    @include bp(about){
+        //width: 475px;
+    }
+    @include bp(phone){
+        //width: 460px;
+    }
+    
     & .bulets {
         background-color: #C18B0E;
         opacity: 0.8;
         padding: 1em 1em 1em 2em;
         margin: 0 0 2em 2em;
         line-height: 2em;
+        @include bp(about){
+            margin: 0;
+            line-height: 1.4em;
+        }
+
     }
     & li {
         list-style-type: square;
     }
 }
 .about-section-three{
-    background-image: url(/Css-Advanced-Project/Pictures/about2.png);
+    background-image: url(../Pictures/about2.png);
     background-repeat: no-repeat;
     background-position: 0% 20%;
     & h2 {
@@ -40,11 +64,13 @@ h2 {
     }
     & .text-side {
         margin: 0 2em 0 auto;
+        @include bp(about){
+            margin: 0;
+        } 
     }
-
 }
 .about-section-two {
-    background-image: url(/Css-Advanced-Project/Pictures/about1-1.jpg);
+    background-image: url(../Pictures/about1-1.jpg);
 }
 .about-section-four {
     background-image: url(/Css-Advanced-Project/Pictures/about3.jpg);
@@ -74,6 +100,15 @@ h2 {
          padding-top: 1.5em;
          font-size: 1.5em;
          line-height: 1.3em;
+        @include bp(tablet){
+            font-size: 1.4em;
+        }
+        @include bp(small-tablet){
+            font-size: 1.3em;
+        }
+        @include bp(phone){
+            font-size: 1.1em;
+        }
      }
  }
  .about-section-six {

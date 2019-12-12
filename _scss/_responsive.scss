@@ -1,9 +1,12 @@
 $breakpoints: (
-  'phone':    ( max-width:  600px ),
-  'tablet':    ( max-width:  900px ),
-  'mobile':   ( max-width:  1024px ),
-  'desktop':  ( min-width:  1025px ),
-  'large':    ( min-width:  1600px ),
+  'mini':         ( max-width:  570px ),
+  'phone':        ( max-width:  600px ),
+  'about':        ( max-width:  620px ),
+  'small-tablet': ( max-width:  750px ),
+  'tablet':       ( max-width:  900px ),
+  'mobile':       ( max-width:  1024px ),
+  'desktop':      ( min-width:  1025px ),
+  'large':        ( min-width:  1600px ),
 ) !default;
 
 /// Mixin to manage responsive breakpoints
