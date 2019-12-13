@@ -30,23 +30,23 @@ button, .sharo-button, .galery-button {
 
 .top-section {
     display: flex;
-    height: 60vh;
+    height: 62vh;
     background: rgb(23,14,9);
     background: linear-gradient(90deg, rgba(23,14,9,1) 0%, rgba(88,52,29,1) 64%, rgba(23,14,9,1) 100%);
     @include bp(mobile){
-        height: 50vh;
+        height: 54vh;
     }
     @include bp(tablet){
-        height: 42vh;
+        height: 47vh;
     }
     @include bp(small-tablet){
-        height: 36vh;
+        height: 39vh;
     }
     @include bp(phone){
         height: 85vh;
     }
     @include bp(mini){
-        height: 100vh;
+        height: 80vh;
     }
     & div {
         width: 85vw;

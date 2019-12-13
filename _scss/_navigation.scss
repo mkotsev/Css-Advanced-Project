@@ -21,11 +21,16 @@
     @include bp(mini){
         font-size: 3em;
     }
-    &:hover{
-        color: #ECB200;
-        transition: color 0.3s ease-in;
-        cursor: pointer;
+    & a {
+        color: blanchedalmond;
+        text-decoration: none;
+        &:hover{
+            color: #ECB200;
+            transition: color 0.3s ease-in;
+            cursor: pointer;
+        }
     }
+    
 }
 .site-header-nav {
     display: flex;
@@ -34,6 +39,7 @@
     @include bp(small-tablet){
         position: absolute;
         margin-left: 14em;
+        z-index: 1;
     }
     @include bp(mini){
         margin-left: 12em;
@@ -47,26 +53,24 @@
             box-shadow: 0 0 5px rgba(0,0,0, .7);
             transition: all .5s;
         }
-
     }
     & .nav-li {
-        padding: 2em 1em;
+        padding: 3em 1em 2em;
         list-style: none outside;
         transform: translate(0, -5em);
         opacity: 0;
         transition: opacity 0.8s, transform 0.3s ease-out;
         @include bp(mobile){
-            padding: 2em 0.6em;
+            padding: 2.5em 0.6em;
         }
         @include bp(tablet){
-            padding: 1.8em 0.4em;
+            padding: 2.1em 0.4em;
         }
         @include bp(small-tablet){
             width: 100%;
             border-bottom: solid 1px #777;
-            padding: 1em 1em;
+            padding: 0;
             background-color: rgba(0, 0, 0, 0.6);        
-
         }
     }
     & .nav-li:nth-child(2) { transition-delay: 0.2s; }
@@ -77,7 +81,14 @@
         color: #BCA491;
         text-transform: uppercase;
         transition: color 0.3s ease-in;
+        @include bp(small-tablet){
+            display: block;
+            padding: 1em 1em;
+            width: auto;
+            height: 100%;
+        }
     }
+
     & a:hover {
         color: #ECB200;
     }
