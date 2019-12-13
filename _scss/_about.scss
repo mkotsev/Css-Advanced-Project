@@ -4,6 +4,7 @@
     margin: auto;
     display: flex;
     flex-direction: column;
+    font-family: var(--font-family-montserrat);
 }
 .about-section-one {
     font-size: 2.5em;
@@ -24,13 +25,15 @@
 h2 {
      font-size: 2.5em;
      margin-left: 0.8em;
-     padding: 1em 0 1em 0; 
+     padding: 1em 0 1em 0;
+     font-family: var(--font-family-montserrat);
      @include bp(about){
         margin: 0;
     }
 }
 
 .text-side {
+    font-family: var(--font-family-lora);
     max-width: 500px;
     @include bp(about){
         //width: 475px;
