@@ -480,7 +480,7 @@ button, .sharo-button, .galery-button {
     display: flex;
     font-family: var(--font-family-montserrat);
     @include bp(mini){
-        height: 100vh;
+        height: 65vh;
     }
 
     & .volunteer-box {
@@ -498,6 +498,7 @@ button, .sharo-button, .galery-button {
     & .volunteer-box-heading{
         font-size: 2.7em;
         font-weight: 100;
+        padding: 0;
         @include bp(phone){
             font-size: 2.5em;
             font-weight: 100;
@@ -508,8 +509,8 @@ button, .sharo-button, .galery-button {
         font-size: 1.5em;
         line-height: normal;
         opacity: 0.5;
-        margin-bottom: 2em;
-        padding-top: 1.5em;
+        margin-bottom: 1.5em;
+        padding-top: 1.3em;
 
     }
 
